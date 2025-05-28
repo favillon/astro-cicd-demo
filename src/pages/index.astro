@@ -1,0 +1,87 @@
+---
+const title:string ='¡Bienvenido a tu proyecto Astro con CI/CD!'
+const subtitle:string ='Desplegado automáticamente con GitHub Actions y Cloudflare Pages'
+const description:string = 'Este es un proyecto de ejemplo para demostrar cómo configurar un flujo de trabajo de CI/CD con Astro, GitHub Actions y Cloudflare Pages.'
+
+import '../styles/global.css';
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Astro Hitss</title>
+  </head>
+  <body class="bg-zinc-950 text-white font-sans">
+    <!-- Navbar -->
+    <header class="flex justify-between items-center px-6 py-4 border-b border-zinc-800">
+      <div class="text-lg font-bold flex items-center gap-2">
+        <span>🧃</span>
+        <span>Astro Hitss</span>
+      </div>
+      <nav class="space-x-6 text-sm text-zinc-300">
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex flex-col items-center text-center px-4 py-16">
+      <div class="max-w-3xl bg-zinc-900 rounded-2xl overflow-hidden shadow-xl">
+        <div class="p-8">
+          <h1 class="text-4xl font-bold mb-4">
+            { title}
+          </h1>
+          <p class="text-zinc-300 mb-6">
+            { subtitle }
+          </p>
+          <p class="text-zinc-300 mb-6">
+            { description }
+          </p>
+          <img src="./img/astronauta.jpg" alt="Astronaut" class="w-full object-cover" />
+        </div>
+        <div class="flex items-center gap-2 bg-zinc-800 p-2 rounded-lg max-w-md mx-auto">
+          <span class="text-zinc-400 px-2">🔍</span>
+          <input
+            type="text"
+            placeholder="Who is this training for?"
+            class="flex-1 bg-transparent outline-none text-white placeholder-zinc-500"
+          />
+          <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-1.5 px-4 rounded-lg">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-sm text-zinc-400 text-center py-10 space-y-4 border-t border-zinc-800">
+      <div class="flex justify-center gap-10">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="flex justify-center gap-6 text-lg">
+        <a href="#">🐦</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+      </div>
+      <p class="text-zinc-500">@2025 Astro Hitss. All rights reserved.</p>
+      Foto de <a href="https://unsplash.com/es/@historyhd?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">History in HD</a> en <a href="https://unsplash.com/es/fotos/astronauta-de-pie-sobre-arena-gris-e5eDHbmHprg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </footer>
+  </body>
+</html>
+<!--html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Astro CI/CD Demo</title>
+  </head>
+   <body class="min-h-screen bg-gradient-to-br from-blue-100 to-white flex items-center justify-center p-6">
+    <div class="max-w-2xl text-center bg-white/70 backdrop-blur-md rounded-2xl shadow-xl p-10 border border-gray-200">
+      <h1 class="text-4xl font-extrabold text-blue-700 mb-4">{ title }</h1>
+      <p class="text-xl text-gray-800 mb-2">{ subtitle }</p>
+      <p class="text-base text-gray-600 mb-4">Este es un proyecto de ejemplo para demostrar cómo configurar un flujo de trabajo de CI/CD con Astro, GitHub Actions y Cloudflare Pages.</p>
+      <h2 class="text-2xl font-semibold text-indigo-600 mt-6">Para Global Hitss</h2>
+    </div>
+  </body>
+</html-->
