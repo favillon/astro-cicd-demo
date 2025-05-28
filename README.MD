@@ -1,13 +1,13 @@
 # astro-cicd-demo
 
 <p align="center">
-    <a href="https://nodejs.org/es" target="blank">
+    <a href="https://nodejs.org/es" target="_blank">
         <img src="./img/node.svg" width="80" alt="Node" />
     </a>
-    <a href="https://astro.build/" target="blank">
+    <a href="https://astro.build/" target="_blank">
         <img src="./img/astro-logo.svg" width="300" alt="Astro" />
     </a>
-    <a href="https://tailwindcss.com/" target="blank">
+    <a href="https://tailwindcss.com/" target="_blank">
         <img src="./img/tailwind.svg" width="200" alt="tailwind" />
     </a>
 </p>
